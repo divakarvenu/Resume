@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
 import {  BrowserRouter as Router, Route , Switch} from "react-router-dom";
 import Home from './Home';
+import Store from '../Data/Store';
+
 
 function App() {
+
   return (
     <Router>
       <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route path="/" render={ (props)=> <Store> <Home {...props} /> </Store> }></Route>
         {/* <Route path="/intro">
           <Intro />
         </Route>
