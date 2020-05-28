@@ -25,8 +25,6 @@ React Starter kit with predefined configuration of
 ## Contributing
 Pull requests are welcome. 
 
-Please make sure to update tests as appropriate.
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
