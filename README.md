@@ -1,13 +1,9 @@
-# React-Starter-Kit-Scaffolding
-React Starter kit with predefined configuration of
-- Webpack
-- Babel
-- Eslint.
+# Resume
 
 # How to Run
 **Clone the repo**
 
-```git clone https://github.com/divakarvenu/React-Starter-Kit-Scaffolding.git ```
+```git clone https://github.com/divakarvenu/Resume.git ```
 
 **Install dependencies**
 
