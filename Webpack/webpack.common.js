@@ -5,9 +5,6 @@ const webpack = require('webpack'); // to access built-in plugins
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    filename: '[name].[contentHash].bundle.js'
-  },
   module: {
     rules: [
             {
@@ -32,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader' , "postcss-loader"],
       },
       {
         test: /\.(svg|png|jpe?g|gif)$/i,

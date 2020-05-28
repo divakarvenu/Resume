@@ -4,6 +4,9 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(common, {
     "mode": "production",
+    output: {
+      filename: '[name].[contentHash].bundle.js'
+    },
     plugins:[ 
         new HtmlWebPackPlugin({
         template: "./src/index.html",
