@@ -18,7 +18,7 @@ React Starter kit with predefined configuration of
   For development run ```npm run dev```. 
   App will be run with ```webpack-dev-server``` in you local.
   
-  # Prouduction
+  # Production
   
    For production run ```npm run prod```. 
 
