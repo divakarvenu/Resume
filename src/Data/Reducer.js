@@ -1,9 +1,7 @@
 const Reducer = (state, action) => {
     switch (action.type) {
       case 'increment':
-        return {count: state.count + 1};
-      case 'decrement':
-        return {count: state.count - 1};
+        return { ...state , 'Name' : 'nithya' };
       default:
         throw new Error();
     }

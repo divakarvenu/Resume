@@ -3,11 +3,10 @@ import { Context } from '../Data/Store';
 
 
 
-const Home = (props) => {
+const Skills = (props) => {
     
     const [state,dispatch] = useContext(Context);
-
-
+    
     return (
         <div className="App container">
             <div className="bg-gray-200 p-4 block">
@@ -24,4 +23,4 @@ const Home = (props) => {
     );
 };
 
-export default Home;
+export default Skills;

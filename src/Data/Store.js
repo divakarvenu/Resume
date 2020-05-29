@@ -2,7 +2,7 @@ import React, {createContext, useReducer, useContext} from "react";
 import Reducer from './Reducer.js';
 
 const initialState = {
-    "Name": '',
+    "Name": 'sample',
     "Title": '',
     "Description": '',
     "image": '',
@@ -28,8 +28,9 @@ const initialState = {
     }]    
 };
 
+export const Context = createContext(null);
 
-const Store = ({children}) => {
+const CustomProvider = ({children}) => {
     const [state, dispatch] = useReducer(Reducer, initialState);
 
     return (
@@ -39,5 +40,5 @@ const Store = ({children}) => {
     );
 };
 
-export const Context = createContext(initialState);
-export default Store;
+
+export default CustomProvider;
