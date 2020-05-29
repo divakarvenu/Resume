@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Skills from './Skills';
 import Education from './Education';
 import Certification from './Certification';
+import Resume from './Resume';
 
 function App() {
 
