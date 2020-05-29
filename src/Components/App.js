@@ -1,39 +1,30 @@
 import React, { useContext } from "react";
-import {  BrowserRouter as Router, Route , Switch} from "react-router-dom";
+import {  HashRouter, Route , Switch} from "react-router-dom";
 import Home from './Home';
 import Intro from './Intro';
 import Contact from './Contact';
 import Skills from './Skills';
 import Education from './Education';
+import Experience from './Experience';
 import Certification from './Certification';
 import Resume from './Resume';
+
 
 function App() {
 
   return (
-    <Router>
+    <HashRouter>
       <Switch>
-        <Route path="/" render={ (props)=> <Home {...props} /> }></Route>
-        <Route path="/intro">
-          <Intro />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/skils">
-          <Skills />
-        </Route>
-        <Route path="/education">
-          <Education />
-        </Route>
-        <Route path="/certification">
-          <Certification />
-        </Route>
-        <Route path="/generate">
-          <Resume />
-        </Route>
+        <Route exact  path="/" component={Home} /> 
+        <Route exact  path="/intro" component={Intro} />
+        <Route exact  path="/contact" component={Contact} />
+        <Route exact  path="/skills" component={Skills} />
+        <Route exact  path="/experience" component={Experience} />
+        <Route exact  path="/education" component={Education} />
+        <Route exact  path="/certification" component={Certification} />
+        <Route exact  path="/generate" component={Resume} />
       </Switch>
-  </Router>
+  </HashRouter>
   );
 }
 
